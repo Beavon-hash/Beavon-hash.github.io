@@ -1,0 +1,29 @@
+.front{
+    background-color: rgba(0,0,0.15);
+    padding: 3rem;
+}
+.front_content{
+    text-align: center;
+    font-family: 'Playfair+Display',sans-serif;
+}
+.front-link:link,
+.front-link:visited{
+    display: inline-block;
+    text-transform: uppercase;
+    color: #ffd700;
+    font-size: 1rem;
+    
+}
+.front-link:not(:last-child){
+    margin-right: 35rem;
+}
+.front-link:hover{
+    color: goldenrod;
+}
+.ion-ios-arrow-dropright.right{
+    font-size: 3rem;
+    position: absolute;
+    top: 2rem;
+    left: 17.5rem;
+    color: orangered;
+}

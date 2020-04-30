@@ -1,0 +1,147 @@
+section.booking{
+    padding: 2rem 0;
+    background-color: #eee;
+    background-size: cover;
+    background-position: center;
+    
+}
+.heading-secondary{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: -2px;
+    background-image: linear-gradient(to right bottom,#29c2ff,#5643f9);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all .5s ease;
+    margin-bottom: 5rem;
+}
+.heading-secondary:hover{
+    transform: translateX(2rem) scale(1.2);
+}
+.card{
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    
+}
+.card_side{
+    height: 40rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+}
+.card:hover .card_side--front{
+    transform: rotateY(180deg);
+}
+.card:hover .card_side--back{
+    transform: rotateY(0);
+}
+.card_side--front{
+    background-color: #fff;
+}
+.card_side--back{
+    transform: rotateY(-180deg);
+}
+.card_side--back-1{
+    background-image: linear-gradient(to right bottom,#ffbb00e7,#ff7830c7);
+}
+.card_side--back-2{
+    background-image: linear-gradient(to right bottom,#7ed56fc9,#28b485c4);
+}
+.card_side--back-3{
+    background-image: linear-gradient(to right bottom,#2998ff,#5643f9);
+}
+.card_picture{
+    background-size: cover;
+    background-position: center;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
+    clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
+
+}
+.card_picture--1{
+    background-image: linear-gradient(to right bottom,#ffbb00be,#ff7830d2),url(../CSS/image/a\ car.jpg);
+}
+.card_picture--2{
+    background-image: linear-gradient(to right bottom,#7ed56fc9,#28b485c4),url(../CSS/image/three.jpg);
+}
+.card_picture--3{
+    background-image: linear-gradient(to right bottom,#2998ff,#5643f9),url(../CSS/image/mata-2.jpg);
+}
+.card_heading{
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    position: absolute;
+    top: 17rem;
+    -webkit-decoration-break: clone; 
+}
+.card_heading-span{
+    color: #fff;
+}
+.card_heading-span--1{
+    background-color: orangered;
+}
+.card_heading-span--2{
+    background-color: rgb(0, 128, 0);
+}
+.card_heading-span--3{
+    background-color: rgb(55, 0, 255);
+}
+.card_details{
+    font-size: 1.5rem;
+}
+.card_details ul{
+    list-style: none;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.card_details li{
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+.card_details li:not(:last-child){
+    border-bottom: 1px solid grey;
+}
+.card__cta{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.card__choose-box{
+    color: #fff;
+    margin-bottom: 2rem;
+}
+.card__price-only{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+.card__price-vip{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.btn:link,
+.btn:visited{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 100px;
+    padding: 14px 14px;
+}
+.btn--white{
+    background-color: #fff;
+    color: #777;
+}
+.btn:hover{
+    box-shadow:  0 10px 20px rgba(0,0,0,.4);
+    
+}

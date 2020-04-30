@@ -1,0 +1,92 @@
+.login{
+    height: 68rem;
+    width: 100%;
+    background-image: linear-gradient(to right bottom,rgba(0,0,0,.2),rgba(0,0,0,.5)),url(../CSS/image/car-3.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+.form_box{
+    width: 38rem;
+    height: 58rem;
+    position: relative;
+    margin: 6% auto;
+    background-color: #fff;
+    padding: 5px;
+    overflow: hidden;
+}
+.button_box{
+    width: 22rem;
+    margin: 3.5rem auto;
+    position: relative;
+    box-shadow: 0 2rem 2rem rgba(0,0,0,.25);
+    border-radius: 3rem;
+}
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    margin-left: 3rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 11rem;
+    height: 100%;
+    background: linear-gradient(to right,#800080,#5643f9);
+    border-radius: 3rem;
+    transition: all .5s ease;
+}
+.input-group{
+    top: 18rem;
+    position: absolute;
+    width: 28rem;
+    transition: all .5s ease;
+}
+.input-field{
+    width: 100%;
+    text-transform: uppercase;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    color: pup;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right,#800080,#5643f9);
+    border: 0;
+    outline: 0;
+    border-radius: 3rem;
+    text-transform: uppercase;
+}
+.checkbox{
+    margin: 30px 10px 40px 0;
+}
+.span{
+    color: #777;
+    font-size: 12px;
+    position: absolute;
+    bottom: 75px;
+}
+#pass{
+    left: 5rem;
+}
+#driver{
+    left: 45rem;
+}

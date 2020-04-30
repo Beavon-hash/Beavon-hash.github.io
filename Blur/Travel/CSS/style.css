@@ -1,0 +1,281 @@
+@import "card.css";
+@import "loginForm.css";
+@import "popup.css";
+@import "signup.css";
+@import "footer.css";
+@import "front.css";
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100rem;
+}
+html{
+    font-family: 'playfair',sans-serif;
+    
+    
+    
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    max-width: 122.5rem;
+    height: 60rem;
+    margin: 0 auto;
+    padding: 0 2.4rem;
+}
+
+
+
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+img{
+
+}
+
+.nav-bar{
+    height: 7.2rem;
+    display: flex;
+    align-items: centre;
+    justify-content: center;
+}
+.menu-toggle{
+    color: #fff;
+    font-size: 2.2rem;
+    position: absolute;
+    top: 50;
+    transform: translateY(50%);
+    right: 2.5rem;
+    position: fixed;
+    cursor: pointer;
+    z-index: 1500;
+}
+.ion-ios-close{
+    display: none;
+}
+.nav-list{
+    list-style: none;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 80%;
+    height: 100vh;
+    background-color: rgba(0,0,0,.8);
+    padding: 4.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 1250;
+    transform: translateX(-100%);
+    transition: transform .5s;
+}
+.nav-bar::before{
+    content: "";
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.8);
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity .5s;
+}
+.open .ion-ios-close{
+    display: block;
+}
+.open .ion-ios-menu{
+    display: none;
+}
+.open .nav-list{
+    transform: translateX(0);
+}
+.open .nav-bar::before{
+    opacity: 1;
+    transform: scale(1);
+}
+.nav-items{
+    border-bottom: 2px solid rgba(255,255,255,.3);
+}
+.nav-link{
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    margin-right: -2px;
+}
+.nav-link:hover{
+    color: #f4a460;
+}
+/*Header*/
+section.description{
+    background-image:linear-gradient(to right bottom,#2998ffd0,#5543f9ce),url(../CSS/image/car-2\ \(2\).jpg);
+    background-size: cover;
+    background-position: centre;
+    clip-path: polygon(15% 0,100% 0,85% 100%,0 100%);
+    overflow: hidden;
+}
+.travel-description{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.heading-primary{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: gold;
+    letter-spacing: 2px;
+    margin-right: -2px;
+
+}
+.heading-tertiary{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: gold;
+}
+span{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: gold;
+}
+.btn-click{
+    position: absolute;
+    top: 2rem;
+    left: 0.5rem;
+    color: black;
+}
+/*description*/
+
+section.features{
+    height: 40rem;
+    background-color: rgba(0,0,0,.2);
+    padding-top: 3rem;
+    transition: all .3s;
+}
+.sub-heading{
+    font-size: 2.6rem;
+    font-family: 'playfair',sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 6rem;
+    background-image: linear-gradient(to right bottom,#29c2ff,#5643f9);
+    color: transparent;
+    -webkit-background-clip: text;
+    transition: all .5s;
+    cursor: pointer;
+}
+.sub-heading:hover{
+    transform: translateY(-2rem) scale(1.03);
+}
+
+.row{
+    max-width: 114rem;
+    margin: 0 auto;
+   
+    
+    
+}
+
+
+
+.row [class^="column-"]{
+    float: left;
+    text-align: center;
+
+}
+.column-1-of-2{
+    width: 540px;
+    position: relative;
+   
+    
+}
+.column-1-of-2:not(:last-child){
+    margin-right: 8rem;
+    
+}
+.column-1-of-3{
+    height: 200px;
+    width: 400px;
+    display: inline-block;
+    padding: 3rem;
+    
+}
+.column-1-of-3:not(:last-child){
+    margin-right: 30px;
+}
+.paragraph{
+    font-size: 1rem;
+    letter-spacing: 1px;
+    
+}
+.heading-safe{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: rgba(0,0,0,.4);
+
+}
+.paragraph:not(:last-child){
+    margin-bottom: 2rem;
+}
+.sacco-link:link,
+.sacco-link:visited{
+    color: green;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    font-size: 1.3rem;
+}
+.sacco-link:hover{
+    box-shadow: 0 2rem 2rem rgba(0,0,0,.5);
+    transform: scale(1.2);
+    color: #fff;
+    background-color: black;
+}
+.image{
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,.3);
+    border-radius: 3px;
+    position: absolute;
+    z-index: 10;
+    outline-offset: 1rem;
+    transition: all .5s ease;
+}
+.p--1{
+    left: 0;
+    top: -2rem;
+}
+
+.p--2{
+    right: 0;
+    top: 2rem;
+}
+.p--3{
+    left: 20%;
+    top: 10rem;
+    z-index: 20;
+}
+.image:hover{
+    transform: scale(1.15);
+    z-index: 30;
+    box-shadow: 0 2.5rem 4rem rgba(0,0,0,.5);
+    outline: 0.6rem solid blue;
+}
+
+
+
